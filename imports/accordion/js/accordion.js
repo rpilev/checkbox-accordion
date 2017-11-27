@@ -132,6 +132,7 @@
       tabcontents[i].style.display = 'none';
       tabcontents[i].style.transform = 'scaleY(0)'; 
     }
+
     //open selected tab
     document.getElementById('accodion-content-tab-' + index).style.display = 'block';
     setTimeout(function() {
@@ -152,9 +153,10 @@
     
     //add click eventlisteners
     for(let i=0;i<tabsHeaders.length;i++) {
-      tabsHeaders[i].addEventListener('click', function() {
-        openTab(i);
-        tabsHeaders[i].scrollIntoView({ 
+
+      tabsHeaders[i].addEventListener('click', function(e) {
+        openTab(e.target.dataset.tabid);
+        tabsHeaders[e.target.dataset.tabid].scrollIntoView({ 
           behavior: 'smooth',
           block: "start",
           inline: "nearest"
@@ -162,9 +164,9 @@
       });
     }    
     for(let i=0;i<tabsHeaders.length-1;i++) {
-      redButtons[i].addEventListener('click', function() {
-        openTab(i+1);
-        tabsHeaders[i+1].scrollIntoView({ 
+      redButtons[i].addEventListener('click', function(e) {
+        openTab(e.target.dataset.tabid);
+        tabsHeaders[e.target.dataset.tabid].scrollIntoView({ 
           behavior: 'smooth',
           block: "start",
           inline: "nearest"
@@ -191,8 +193,8 @@
       }
       accordionHTML += '\
         <div class="tab">\
-          <div class="accordion-tab-header">\
-            <h3 class="accordion-tab-title">'+data[i].tab_title+'</h3>\
+          <div class="accordion-tab-header" data-tabid="'+i+'">\
+            <h3 class="accordion-tab-title" data-tabid="'+i+'">'+data[i].tab_title+'</h3>\
             <p class="accordion-tab-selection-number" id="select-counter-'+i+'">0 / 3</p>\
           </div>\
           <div class="accordion-tab-content" id="accodion-content-tab-'+i+'">\
@@ -215,7 +217,7 @@
           if (i!=data.length-1) {
             accordionHTML += '\
                 </table>\
-                <button class="red-button">Järgmine teema</button>\
+                <button class="red-button" data-tabid="'+ parseInt(i+1) +'">Järgmine teema</button>\
               </div>\
             </div>\
             ';

@@ -22,22 +22,59 @@
   padding: 15px;
 }
 
-.accordion-tab-content table tr td input[type="checkbox"] {
-  visibility: hidden;
-  margin-bottom: 20px;
+.accordion-tab-content table tr td input[type=checkbox] {
+  appearance: none;
+  background: transparent;
+  position: relative;
 }
-.accordion-tab-content table tr td input[type="checkbox"]:before {
+.accordion-tab-content table tr td input[type=checkbox]::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  text-align: center;
+  background: #efefef;
+  display: block;
+  pointer-events: none;
+  opacity: 1;
+  color: black;
+  border-top: 1px solid #787878;
+  border-left: 1px solid #b3b3b3;
+  border-right: 1px solid #b3b3b3;
+  border-bottom: 1px solid #dbdbdb;
+}
+.accordion-tab-content table tr td input[type=checkbox] + label {
+  line-height: 48px;
+  margin: 0 15px 0 15px;
+}
+.accordion-tab-content table tr td input[type=checkbox]:checked::after {
+  content: '\2713';
+  font-weight: bolder;
+  background-color: #fff6bf;
+  border: 1px solid #f0ce00;
+}
+.accordion-tab-content table tr td input[type=checkbox],
+.accordion-tab-content table tr td input[type=checkbox]::after {
+  width: 28px;
+  height: 28px;
+  font-size: 26px;
+  line-height: 28px;
+  vertical-align: middle;
+}
+
+/*
+.accordion-tab-content table tr td input[type="checkbox"]:after {
   visibility: visible;
   content: url(../img/checkbox-unchecked.png);
   vertical-align: top;
   padding: 0;
 }
-.accordion-tab-content table tr td input[type="checkbox"]:checked:before {
+.accordion-tab-content table tr td input[type="checkbox"]:checked:after {
   visibility: visible;
   content: url(../img/checkbox-checked.png);
   vertical-align: top;
   padding: 0;
-}
+}*/
 
 .accordion-thumbnail {
   width: 95px;

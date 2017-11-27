@@ -1,5 +1,5 @@
 # Checkbox Accordion
-An accodion plugin with checkboxes for Javascript with an example template included
+An accordion plugin with checkboxes for Javascript with an example template included
 
 ## Usage
 Include accordion.js ( from \imports\accordion\js\ ) and accordion.css ( from \imports\accordion\css\ ) to your project

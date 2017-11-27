@@ -1,0 +1,199 @@
+.main-header {
+  background: url(../img/main-header-img.jpg) no-repeat center center; 
+  background-size: cover;
+  text-align: center;
+  padding: 0 !important;
+}
+
+.jumbotron-inner-section {
+  text-align: left;
+  width: 500px;
+  margin-right: 596px;
+  display: inline-block;
+  margin-bottom: 200px;
+}
+
+.jumbotron-inner-section h1 {
+  font-family: "Bienetresocial";
+  margin-top: -57px;
+  margin-bottom: 50px;
+  font-size: 117px;
+}
+.jumbotron-inner-section h1 span {
+  display: inline-block;
+  position: absolute;
+  transform: rotate(-67deg);
+  -webkit-transform: rotate(-67deg);
+  -moz-transform: rotate(-67deg);
+  -ms-transform: rotate(-67deg);
+  -o-transform: rotate(-67deg);
+  margin-top: 50px;
+  margin-left: -30px;
+  font-family: "Bienetresocial";
+  font-size: 17px;
+}
+
+.jumbotron-inner-section p {
+  font-family: "My Ride";
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.darkred-box {
+  font-family: "PTSans NarrowBold";
+  color: white;
+  text-align: center;
+  width: 17em;
+  padding: 0px;
+  min-height: 8.5em;
+  display: inline-block;
+  background: linear-gradient(5deg, transparent 47%, #a62300 0%) 
+          no-repeat 0 100%, 
+          linear-gradient(-5deg, transparent 47%, #a62300 0%) 
+          no-repeat 100% 100%;
+  background-size: 50% 8.5em;
+}
+
+.darkred-box span {
+  font-size: 50px;
+}
+
+.darkred-text {
+  font-family: "PTSans NarrowBold" !important;
+  color: #a62300;
+  font-size: 30px !important;
+  cursor: pointer;
+}
+
+.section-2 {
+  padding: 0 54px;
+}
+
+.section-2-header {
+  font-family: "Bienetresocial";
+  font-weight: bolder;
+  font-size: 30px;
+  padding-bottom: 30px;
+}
+
+.section-2-paragrath {
+  font-family: "My Ride";
+  font-size: 24px;
+  max-width: 1070px;
+}
+
+footer {
+  background-color: #3b3530;
+}
+
+.ptsans-small {
+  font-family: "PTSans";
+  font-size: 16px;
+  color: #fff;
+  mnargin-bottom: 0;
+}
+
+.yellow-underline {
+  text-decoration: underline;
+  color: #ffe756;
+}
+
+#toggle-terms {
+  cursor: pointer;  
+}
+
+.footer-innter-text{
+  max-width: 1105px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+#popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;;
+}
+
+.popup-text {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 25px;
+  margin: 10% auto;
+  max-width: 50%;
+}
+
+@media (max-width:1020px) {
+  .jumbotron-inner-section {
+    margin-right: 0 !important;
+    margin: 0 auto !important;
+  }
+  .footer-innter-text {
+    max-width: 218px !important;
+    font-weight: bolder;
+  }
+  .main-header {
+    background-position-x: left;
+    padding: 0 0 60px 0 !important;
+  }
+  .popup-text {
+    max-width: 90%;
+  }
+}
+
+@media (max-width:564px) {
+  .books-img {
+    width: 250px;
+  }
+  .jumbotron-inner-section {
+    max-width: 285px;
+  }
+  .jumbotron-inner-section .display-1 {
+    font-size: 65px;
+    margin-left: 23px;
+    margin-bottom: 10px;
+  }
+  .jumbotron-inner-section .display-1 span {
+    margin-top: 29px;
+    margin-left: -29px;
+    font-size: 11px;
+  }
+  .jumbotron-inner-section .lead {
+    max-width: 294px;
+    padding: 5px 21px;
+  }
+
+  .darkred-text {
+    text-align: center;
+    font-size: 28px !important;
+  }
+  .section-2-header {
+    font-size: 24px;
+  }
+  .section-2-paragrath {
+    font-size: 18px;
+  }
+}
+
+@font-face {
+  font-family: "Bienetresocial";
+  src: url(../fonts/Bienetresocial.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "My Ride";
+  src: url(../fonts/Myriad-Pro-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PTSans NarrowBold";
+  src: url(../fonts/pt-sans-narrow-bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PTSans";
+  src: url(../fonts/PT_Sans-Web-Regular.ttf) format("truetype");
+}

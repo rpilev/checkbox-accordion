@@ -1,0 +1,148 @@
+.accordion-tab-header {
+  padding-top: 40px;
+  border-bottom: 1px solid #ffe756;
+  cursor: pointer;
+}
+
+.accordion-tab-content {
+  overflow: hidden;
+  border-bottom: 1px solid #ffe756;
+  width: 100%;
+  transform: scaleY(0); 
+  display: none;   
+  transform-origin: top;
+  transition: transform 0.4s ease;
+}
+
+.accordion-tab-content table {
+  width: 100%;
+}
+
+.accordion-tab-content table tr td {
+  padding: 15px;
+}
+
+.accordion-tab-content table tr td input[type="checkbox"] {
+  visibility: hidden;
+  margin-bottom: 20px;
+}
+.accordion-tab-content table tr td input[type="checkbox"]:before {
+  visibility: visible;
+  content: url(../img/checkbox-unchecked.png);
+  vertical-align: top;
+  padding: 0;
+}
+.accordion-tab-content table tr td input[type="checkbox"]:checked:before {
+  visibility: visible;
+  content: url(../img/checkbox-checked.png);
+  vertical-align: top;
+  padding: 0;
+}
+
+.accordion-thumbnail {
+  width: 95px;
+}
+
+.accordion-tab-title {
+  display: inline-block;
+  font-family: "Bienetresocial";
+  font-size: 20px;
+  font-weight: 600;
+  padding: 5px 0 13px 20px;
+}
+
+.accordion-tab-selection-number {
+  float: right;
+  font-family: "PTSans Narrow";
+  font-size: 24px;
+}
+
+.accordion-tab-content-row {
+  border-bottom: 2px solid #fff8cd;
+  transition: background-color 400ms ease;
+}
+
+.accordion-tab-content-title {
+  font-size: 16px;
+  font-family: "PTSans Bold";
+}
+
+.accordion-tab-content-description {
+  font-size: 16px;
+  font-family: "PTSans";
+  max-width: 700px;
+}
+
+.red-button {
+  margin: 20px auto 30px auto;
+  background-color: #a62300;
+  display: block;
+  font-family: "PTSans NarrowBold";
+  font-size: 30px;
+  border-radius: 7px;
+  color: white;
+  padding: 5px 20px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+#final-button {
+  margin: 10px auto;
+  background-color: #a62300;
+  display: block;
+  font-family: "PTSans NarrowBold";
+  font-size: 30px;
+  border-radius: 7px;
+  color: #e2e2e2;
+  padding: 5px 40px;
+  border-style: solid;
+  cursor: pointer;
+}
+
+#final-button:disabled {
+  background-color: #b1b1b1;
+  cursor: not-allowed;
+}
+
+.myraid-regular {
+  font-size: 20px;
+}
+
+.section-bottom {
+  padding-top: 100px;
+}
+
+.red-underline {
+  text-decoration: underline;
+  color: #a62300;
+}
+
+@font-face {
+  font-family: "Bienetresocial";
+  src: url(../fonts/Bienetresocial.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "My Ride";
+  src: url(../fonts/Myriad-Pro-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PTSans NarrowBold";
+  src: url(../fonts/pt-sans-narrow-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PTSans Narrow";
+  src: url(../fonts/PT_Sans-Narrow.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PTSans Bold";
+  src: url(../fonts/pt-sans-narrow-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "PTSans";
+  src: url(../fonts/PT_Sans-Web-Regular.ttf) format("truetype");
+}

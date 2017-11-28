@@ -202,7 +202,7 @@
             for(let j=0; j<data[i].tab_selections.length;j++){
               accordionHTML += '\
                 <tr class="accordion-tab-content-row">\
-                  <td><input type="checkbox" id="checkbox-'+i+'-'+j+'" data-tab="'+i+'" data-selection="'+j+'" class="accordion-checkbox" name="accordion-checkbox"></td>\
+                  <td><input type="checkbox" id="checkbox-'+i+'-'+j+'" data-tab="'+i+'" data-selection="'+j+'" class="accordion-checkbox" name="accordion-checkbox"><label for="checkbox-'+i+'-'+j+'"></label></td>\
                   <td><img alt="accordion-thumbnail" class="accordion-thumbnail" src="'+this.options.pathToThumbnails+data[i].tab_selections[j].item_img+'"></td>\
                   <td>\
                     <h4 class="accordion-tab-content-title">\

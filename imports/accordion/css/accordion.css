@@ -21,7 +21,7 @@
 .accordion-tab-content table tr td {
   padding: 15px;
 }
-
+/*
 .accordion-tab-content table tr td input[type=checkbox] {
   appearance: none;
   background: transparent;
@@ -60,21 +60,27 @@
   font-size: 26px;
   line-height: 28px;
   vertical-align: middle;
+}*/
+.accordion-tab-content table tr td input[type="checkbox"] {
+  visibility: hidden;
 }
 
-/*
-.accordion-tab-content table tr td input[type="checkbox"]:after {
+.accordion-tab-content table tr td input[type="checkbox"]:checked {
+  visibility: hidden;
+}
+
+.accordion-tab-content table tr td input[type="checkbox"] +label::after {
   visibility: visible;
   content: url(../img/checkbox-unchecked.png);
   vertical-align: top;
   padding: 0;
 }
-.accordion-tab-content table tr td input[type="checkbox"]:checked:after {
+.accordion-tab-content table tr td input[type="checkbox"]:checked +label::after {
   visibility: visible;
   content: url(../img/checkbox-checked.png);
   vertical-align: top;
   padding: 0;
-}*/
+}
 
 .accordion-thumbnail {
   width: 95px;
